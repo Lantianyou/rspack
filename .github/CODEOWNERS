@@ -1,0 +1,74 @@
+# About code owners
+# https://help.github.com/en/articles/about-code-owners
+
+# Default to project owner
+* @hardfist
+
+# Ignore lock files
+Cargo.lock
+pnpm-lock.yaml
+
+# Infra
+/benchcases @IWANABETHATGUY
+/xtask @IWANABETHATGUY
+/.github/workflows @IWANABETHATGUY @Boshen
+
+# Examples
+/examples
+
+# Crates in alphabetical order
+/crates/bench @IWANABETHATGUY
+/crates/cargo-rst @JSerFeng
+/crates/loader_runner
+/crates/node_binding
+/crates/rspack
+/crates/rspack_ast_viewer @h-a-n-a
+/crates/rspack_base64
+/crates/rspack_binding_macros
+/crates/rspack_binding_options
+/crates/rspack_build
+/crates/rspack_core/src/build_chunk_graph @hyf0
+/crates/rspack_core/src/tree_shaking @IWANABETHATGUY
+/crates/rspack_core
+/crates/rspack_database
+/crates/rspack_error
+/crates/rspack_fs
+/crates/rspack_fs_node
+/crates/rspack_futures
+/crates/rspack_identifier
+/crates/rspack_ids
+/crates/rspack_loader_sass
+/crates/rspack_napi_shared
+/crates/rspack_plugin_asset
+/crates/rspack_plugin_copy
+/crates/rspack_plugin_css
+/crates/rspack_plugin_dev_friendly_split_chunks
+/crates/rspack_plugin_devtool
+/crates/rspack_plugin_externals
+/crates/rspack_plugin_html
+/crates/rspack_plugin_javascript
+/crates/rspack_plugin_json
+/crates/rspack_plugin_library
+/crates/rspack_plugin_progress
+/crates/rspack_plugin_remove_empty_chunks
+/crates/rspack_plugin_runtime
+/crates/rspack_plugin_split_chunks
+/crates/rspack_plugin_wasm
+/crates/rspack_regex
+/crates/rspack_symbol
+/crates/rspack_testing
+/crates/rspack_tracing
+/crates/rspack_util
+
+# Packages in alphabetical order
+/packages/create-rspack
+/packages/less-loader
+/packages/postcss-loader
+/packages/rspack
+/packages/rspack-cli
+/packages/rspack-dev-client
+/packages/rspack-dev-middleware
+/packages/rspack-dev-server
+/packages/rspack-plugin-html
+/packages/rspack-plugin-minify
+/packages/rspack-plugin-node-polyfill
