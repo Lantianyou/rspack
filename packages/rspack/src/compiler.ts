@@ -99,6 +99,9 @@ class Compiler {
 			},
 			get rspackVersion() {
 				return require("../package.json").version;
+			},
+			get util() {
+				return require("./util/webpack");
 			}
 		};
 		this.root = this;
